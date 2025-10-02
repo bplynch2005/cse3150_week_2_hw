@@ -12,7 +12,7 @@ namespace GreetingUtils{
 
 	char* format_as_c_string(const string& msg){
 		size_t msgLen = msg.size();
-		char* arr = new char[msgLen];
+		char* arr = new char[msgLen+1];
 		for(size_t i = 0; i < msgLen; ++i){
 			arr[i] = msg[i];
 		}
